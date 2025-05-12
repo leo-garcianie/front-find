@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --background: #ffffff;
@@ -17,6 +17,10 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+}
+
+.icons-landing {
+  @apply filter grayscale scale-90 hover:scale-95 transition-all duration-200 ease-in-out;
 }
 
 body {
