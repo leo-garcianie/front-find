@@ -1,7 +1,10 @@
+'use client'
 import React from 'react'
-import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 
 const Navbar = () => {
+  const router = useRouter()
+
   return (
     <nav className="z-10 top-8 left-1/2 -translate-x-1/2 fixed flex items-center py-3 px-5 rounded-2xl bg-white/4 backdrop-blur-md border text-[#B4B4B4] border-[#999999]/40 gap-150">
       <div className="flex items-center gap-3">
@@ -19,7 +22,10 @@ const Navbar = () => {
         <span className="font-bold text-[#B4B4B4] text-xl">FrontFind</span>
       </div>
 
-      <button className="font-bold text-[#E6FF79] border-1  border-[#E6FF79] px-4 py-2 hover:bg-[#D4FF5B] hover:text-black rounded-md transition-all duration-200 ease-in-out">
+      <button
+        className="font-bold text-[#E6FF79] border-1  border-[#E6FF79] px-4 py-2 hover:bg-[#D4FF5B] hover:text-black rounded-md transition-all duration-200 ease-in-out hover:cursor-pointer"
+        onClick={() => router.push('/survey')}
+      >
         Find
       </button>
     </nav>
