@@ -41,7 +41,7 @@ export default function Survey() {
   // Save the answers in localStorage to use them in the results page
   const handleSubmit = () => {
     localStorage.setItem('surveyAnswers', JSON.stringify(answers))
-    router.push('/')
+    router.push('/results')
   }
 
   return (
