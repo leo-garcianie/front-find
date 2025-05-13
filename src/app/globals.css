@@ -27,6 +27,10 @@
   @apply border border-[#E6FF79] px-3 py-2 text-[#E6FF79] font-bold transition-all duration-200 ease-in-out hover:cursor-pointer hover:scale-105;
 }
 
+.survey-btn:disabled {
+  @apply opacity-20 cursor-not-allowed;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
