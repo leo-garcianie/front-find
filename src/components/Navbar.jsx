@@ -6,7 +6,7 @@ const Navbar = () => {
   const router = useRouter()
 
   return (
-    <nav className="z-10 top-8 left-1/2 -translate-x-1/2 fixed flex items-center py-3 px-5 rounded-2xl bg-white/4 backdrop-blur-md border text-[#B4B4B4] border-[#999999]/40 gap-150">
+    <nav className="w-2/3 z-10 top-8 left-1/2 -translate-x-1/2 fixed flex items-center justify-between py-3 px-5 rounded-2xl bg-white/4 backdrop-blur-md border text-[#B4B4B4] border-[#999999]/40">
       <div className="flex items-center gap-3">
         <a href="">
           <div className="bg-[#E6FF79] w-10 h-10 rounded-full"></div>

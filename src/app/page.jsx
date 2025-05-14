@@ -26,7 +26,7 @@ export default function Home() {
         <p className="font-light text-3xl text-white">Let’s find it...</p>
 
         <button
-          className="font-bold text-black bg-[#E6FF79] px-4 py-2 rounded-md transition-all duration-200 ease-in-out mt-2 hover:cursor-pointer hover:scale-105"
+          className="primary-btn mt-2"
           onClick={() => router.push('/survey')}
         >
           Get Started
