@@ -23,6 +23,14 @@
   @apply filter grayscale scale-90 hover:scale-95 transition-all duration-200 ease-in-out;
 }
 
+.primary-btn {
+  @apply font-bold text-black bg-[#E6FF79] px-4 py-2 rounded-md transition-all duration-200 ease-in-out hover:cursor-pointer hover:scale-105;
+}
+
+.secondary-btn {
+  @apply border border-[#E6FF79] px-3 py-1 text-[#E6FF79] font-bold rounded-xl transition-all duration-200 ease-in-out hover:cursor-pointer hover:scale-105 w-fit;
+}
+
 .survey-btn {
   @apply border border-[#E6FF79] px-3 py-2 text-[#E6FF79] font-bold transition-all duration-200 ease-in-out hover:cursor-pointer hover:scale-105;
 }
