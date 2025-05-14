@@ -1,4 +1,4 @@
-/*export const frameworks = [
+export const frameworks = [
   {
     id: 1,
     nombre: 'React',
@@ -390,7 +390,6 @@
     url_documentacion: 'https://alpinejs.dev/start-here',
   },
 ]
-*/
 
 export const questions = [
   {
