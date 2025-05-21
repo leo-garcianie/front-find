@@ -39,6 +39,10 @@
   @apply opacity-20 cursor-not-allowed;
 }
 
+.grid-details {
+  @apply bg-white/4 backdrop-blur-md border border-[#999999]/40 rounded-2xl h-fit px-5 py-4;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
