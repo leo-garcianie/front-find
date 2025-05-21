@@ -33,22 +33,40 @@ export default function Home() {
         </button>
 
         <div className="flex items-center justify-center w-full h-30 mt-15 bg-white/4 gap-23">
-          <img className="icons-landing" src="./vuejs.webp" alt="VueJs Logo" />
           <img
             className="icons-landing"
-            src="./angular.webp"
+            src="/images/vue.svg"
+            alt="VueJs Logo"
+            height={80}
+            width={80}
+          />
+          <img
+            className="icons-landing"
+            src="/images/angular.svg"
             alt="Angular Logo"
-          />
-          <img className="icons-landing" src="./react.webp" alt="React Logo" />
-          <img
-            className="icons-landing"
-            src="./jquery.webp"
-            alt="jQuery Logo"
+            height={80}
+            width={80}
           />
           <img
             className="icons-landing"
-            src="./svelte.webp"
+            src="/images/react.svg"
+            alt="React Logo"
+            height={80}
+            width={80}
+          />
+          <img
+            className="icons-landing"
+            src="/images/ember.svg"
+            alt="Next Logo"
+            height={80}
+            width={80}
+          />
+          <img
+            className="icons-landing"
+            src="/images/svelte.svg"
             alt="Svelte Logo"
+            height={80}
+            width={80}
           />
         </div>
       </div>
