@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import Navbar from '@/components/Navbar'
-import CircularPercentage from '@/components/CircularPercentage'
+import CircularPercentage from '@/components/charts/CircularPercentage'
 import { calculateRecommendations } from '@/lib/algorithm'
 
 export default function Results() {
@@ -73,15 +73,21 @@ export default function Results() {
             <div key={framework.id}>
               <div className="border border-[#999999]/40 rounded-4xl px-8 py-6 flex flex-col justify-center bg-white/4">
                 {/* Name */}
-                <div>
-                  <img src="" alt="" />
-                  <h2 className="font-bold text-xl mb-2">{framework.nombre}</h2>
+                <div className="flex flex-row justify-center items-center gap-3 mb-3">
+                  <img
+                    src={framework.img}
+                    alt="Logo"
+                    width={45}
+                    height={45}
+                    className="drop-shadow-[0_0_8px_rgba(115,233,188,0.3)]"
+                  />
+                  <h2 className="font-bold text-xl">{framework.name}</h2>
                 </div>
 
-                {/* Level */}
+                {/* Level 
                 <span className="text-sm text-white/70">
                   Level: {pascalCase(framework.nivel_experiencia_recomendado)}
-                </span>
+                </span>*/}
 
                 {/* Percentage */}
                 <div className="flex flex-col justify-center items-center my-5">
@@ -92,7 +98,12 @@ export default function Results() {
                 </div>
 
                 {/* Details Button */}
-                <button className="secondary-btn">Details</button>
+                <button
+                  className="secondary-btn"
+                  onClick={() => handleViewDetails(framework.id)}
+                >
+                  Details
+                </button>
               </div>
 
               {/* No# */}
@@ -104,11 +115,10 @@ export default function Results() {
         </div>
 
         {/* Buttons */}
-        <div className="flex justify-center gap-2 mt-8">
+        <div className="flex justify-center mt-8">
           <button className="primary-btn" onClick={handleRestartSurvey}>
-            Restart
+            Restart survey
           </button>
-          <button className="primary-btn">PDF</button>
         </div>
       </div>
     </main>
