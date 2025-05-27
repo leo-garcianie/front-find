@@ -40,7 +40,7 @@
 }
 
 .grid-details {
-  @apply bg-white/4 backdrop-blur-md border border-[#999999]/40 rounded-2xl h-fit px-5 py-4;
+  @apply bg-white/4 backdrop-blur-md border border-[#999999]/40 rounded-2xl h-full px-5 py-4;
 }
 
 body {
