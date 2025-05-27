@@ -137,19 +137,10 @@ export function calculateRecommendations(answers) {
       ((framework.scalability + framework.ease_of_maintenance) / 2) * weight
   })
 
-  // Consideraciones adicionales (bonus si incluye caracteristicas extra)
+  // Popularidad - Los frameworks más populares (número menor) reciben más puntos
   frameworks.forEach((framework) => {
-    if (framework.mobile_compatibility >= 4) {
-      scores[framework.id] += 3
-    }
-
-    if (framework.job_market_popularity >= 4) {
-      scores[framework.id] += 3
-    }
-
-    if (framework.ecosystem >= 4) {
-      scores[framework.id] += 3
-    }
+    const popularityBonus = 16 - framework.popularity // (1 = 15 puntos, 15 = 1 punto)
+    scores[framework.id] += popularityBonus * 0.5
   })
 
   const maxPossibleScore = 180

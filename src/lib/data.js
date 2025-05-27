@@ -3,6 +3,7 @@ export const frameworks = [
     id: 1,
     name: 'React',
     img: '/images/react.svg',
+    popularity: 1, // Most popular
 
     // 1
     recommended_experience_level: 'beginner',
@@ -63,6 +64,7 @@ export const frameworks = [
     id: 2,
     name: 'Vue.js',
     img: '/images/vue.svg',
+    popularity: 3,
     recommended_experience_level: 'beginner',
     project_compatibility: {
       landing_page: 5,
@@ -101,6 +103,7 @@ export const frameworks = [
     id: 3,
     name: 'Angular',
     img: '/images/angular.svg',
+    popularity: 4,
     recommended_experience_level: 'advanced',
     project_compatibility: {
       landing_page: 3,
@@ -139,6 +142,7 @@ export const frameworks = [
     id: 4,
     name: 'Next.js',
     img: '/images/next-js.svg',
+    popularity: 2,
     recommended_experience_level: 'intermediate',
     project_compatibility: {
       landing_page: 5,
@@ -177,6 +181,7 @@ export const frameworks = [
     id: 5,
     name: 'Svelte',
     img: '/images/svelte.svg',
+    popularity: 8,
     recommended_experience_level: 'beginner',
     project_compatibility: {
       landing_page: 5,
@@ -215,6 +220,7 @@ export const frameworks = [
     id: 6,
     name: 'Nuxt.js',
     img: '/images/nuxt-js.svg',
+    popularity: 6,
     recommended_experience_level: 'intermediate',
     project_compatibility: {
       landing_page: 5,
@@ -253,6 +259,7 @@ export const frameworks = [
     id: 7,
     name: 'Ember.js',
     img: '/images/ember.svg',
+    popularity: 14,
     recommended_experience_level: 'advanced',
     project_compatibility: {
       landing_page: 3,
@@ -291,6 +298,7 @@ export const frameworks = [
     id: 8,
     name: 'SvelteKit',
     img: '/images/svelte.svg',
+    popularity: 7,
     recommended_experience_level: 'intermediate',
     project_compatibility: {
       landing_page: 5,
@@ -329,6 +337,7 @@ export const frameworks = [
     id: 9,
     name: 'Preact',
     img: '/images/preact.svg',
+    popularity: 11,
     recommended_experience_level: 'intermediate',
     project_compatibility: {
       landing_page: 4,
@@ -367,6 +376,7 @@ export const frameworks = [
     id: 10,
     name: 'Astro',
     img: '/images/astro-js.svg',
+    popularity: 9,
     recommended_experience_level: 'intermediate',
     project_compatibility: {
       landing_page: 5,
@@ -405,6 +415,7 @@ export const frameworks = [
     id: 11,
     name: 'Qwik',
     img: '/images/qwik.svg',
+    popularity: 13,
     recommended_experience_level: 'advanced',
     project_compatibility: {
       landing_page: 5,
@@ -443,6 +454,7 @@ export const frameworks = [
     id: 12,
     name: 'Alpine.js',
     img: '/images/alpine-js.svg',
+    popularity: 10,
     recommended_experience_level: 'beginner',
     project_compatibility: {
       landing_page: 5,
@@ -481,6 +493,7 @@ export const frameworks = [
     id: 13,
     name: 'Solid.js',
     img: '/images/solidjs.svg',
+    popularity: 12,
     recommended_experience_level: 'intermediate',
     project_compatibility: {
       landing_page: 4,
@@ -519,6 +532,7 @@ export const frameworks = [
     id: 14,
     name: 'Remix',
     img: '/images/remix.svg',
+    popularity: 5,
     recommended_experience_level: 'intermediate',
     project_compatibility: {
       landing_page: 4,
@@ -557,6 +571,7 @@ export const frameworks = [
     id: 15,
     name: 'Lit',
     img: '/images/lit.svg',
+    popularity: 15, // Least popular
     recommended_experience_level: 'intermediate',
     project_compatibility: {
       landing_page: 4,
@@ -660,7 +675,7 @@ export const questions = [
     question: 'Does your application need to be SEO-friendly?',
     options: [
       { id: 'yes', text: 'Yes, SEO is very important' },
-      { id: 'helpful', text: 'It would be helpful, but it’s not essential' },
+      { id: 'helpful', text: "It would be helpful, but it's not essential" },
       { id: 'no', text: 'Not a priority' },
     ],
   },
@@ -701,7 +716,7 @@ export const questions = [
         text: 'Very important — I want to easily find answers and support',
       },
       { id: 'useful', text: 'Useful, but not a deciding factor' },
-      { id: 'not', text: 'Not something I’m concerned about' },
+      { id: 'not', text: "Not something I'm concerned about" },
     ],
   },
   {
@@ -713,7 +728,7 @@ export const questions = [
         text: 'Very important — I plan to maintain and scale the project',
       },
       { id: 'imp', text: 'Important, but the project is short to mid-term' },
-      { id: 'not', text: 'Not a priority — it’s a small or temporary project' },
+      { id: 'not', text: "Not a priority — it's a small or temporary project" },
     ],
   },
 ]
