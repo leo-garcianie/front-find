@@ -92,7 +92,7 @@ const Survey = () => {
             {/* Logo */}
             <div className="flex items-center gap-3">
               <img
-                src="/frontfind-logo.png"
+                src="/frontfind-logo.svg"
                 alt="FrontFind Logo"
                 className="size-8 lg:size-10"
               />
