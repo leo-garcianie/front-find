@@ -113,7 +113,7 @@ const Survey = () => {
           {/* Container */}
           <div className="px-10 md:px-14 lg:px-20">
             {/* Question */}
-            <span className="flex md:hidden font-light text-3xl mb-8">
+            <span className="flex md:hidden font-light text-3xl mb-8 text-white">
               {currentQuestion.question}
             </span>
             <h1 className="font-bold text-lg md:text-xl lg:text-2xl text-[#E6FF79] mb-5">
