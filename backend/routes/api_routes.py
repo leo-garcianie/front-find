@@ -1,8 +1,8 @@
 from flask import Blueprint, request, jsonify
-from backend.services.recommendation_service import RecommendationService
-from backend.models.response import RecommendationResult
-from backend.data.frameworks_data import QUESTIONS, FRAMEWORKS
-from backend.utils.validators import validate_answers
+from services.recommendation_service import RecommendationService
+from models.response import RecommendationResult
+from data.frameworks_data import QUESTIONS, FRAMEWORKS
+from utils.validators import validate_answers
 from datetime import datetime
 
 api_bp = Blueprint('api', __name__)

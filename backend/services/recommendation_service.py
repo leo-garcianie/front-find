@@ -1,4 +1,4 @@
-from backend.data.frameworks_data import FRAMEWORKS
+from data.frameworks_data import FRAMEWORKS
 import copy
 
 class RecommendationService:
