@@ -12,7 +12,7 @@ const CompatibilityChart = ({ lan, blog, spa, mpa, dash, ecom }) => {
 
   return (
     <BarChart
-      width={450}
+      width={380}
       height={150}
       data={data}
       margin={{ top: 0, right: 0, left: 0, bottom: 0 }}

@@ -90,7 +90,7 @@ const Results = () => {
                       alt="Logo"
                       className="size-10 md:size-12 drop-shadow-[0_0_8px_rgba(115,233,188,0.3)]"
                     />
-                    <h2 className="font-bold text-lg md:text-xl">
+                    <h2 className="font-bold text-lg md:text-xl text-white">
                       {framework.name}
                     </h2>
                   </div>
@@ -101,7 +101,7 @@ const Results = () => {
 
                   <div className="flex flex-col justify-center items-center my-5">
                     <CircularPercentage percentage={framework.accuracy} />
-                    <div className="text-xl lg:text-2xl font-bold mt-1">
+                    <div className="text-xl lg:text-2xl font-bold mt-1 text-white">
                       {framework.accuracy}%
                     </div>
                   </div>
@@ -114,7 +114,7 @@ const Results = () => {
                   </button>
                 </div>
 
-                <div className="justify-self-center mt-3 text-2xl md:text-3xl lg:text-4xl font-bold">
+                <div className="justify-self-center mt-3 text-2xl md:text-3xl lg:text-4xl font-bold text-white">
                   {index + 1}
                 </div>
               </div>

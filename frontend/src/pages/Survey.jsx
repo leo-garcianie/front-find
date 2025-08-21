@@ -78,7 +78,7 @@ const Survey = () => {
           </div>
 
           {/* Question */}
-          <span className="font-light text-2xl md:text-3xl lg:text-4xl">
+          <span className="font-light text-2xl md:text-3xl lg:text-4xl text-white">
             {currentQuestion.question}
           </span>
 

@@ -53,11 +53,11 @@ const Details = () => {
               alt={framework.name}
               className="size-10 md:size-12 lg:size-14 rounded-full drop-shadow-[0_0_8px_rgba(115,233,188,0.3)]"
             />
-            <span className="text-2xl md:text-3xl lg:text-4xl font-bold">
+            <span className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">
               {framework.name}
             </span>
           </div>
-          <div className="flex flex-col items-center w-9/12 px-5 py-5 gap-2 text-sm md:text-base">
+          <div className="flex flex-col items-center w-9/12 px-5 py-5 gap-2 text-sm md:text-base text-white">
             <div className="flex gap-4">
               <div className="capitalize">
                 • Experience Level: {framework.recommended_experience_level}
@@ -79,7 +79,7 @@ const Details = () => {
 
         {/* 2 */}
         <div className="flex flex-col items-center justify-center lg:col-span-2 grid-details">
-          <div className="mb-2 text-sm md:text-base">Compatibility</div>
+          <div className="mb-2 text-sm md:text-base text-white">Compatibility</div>
           <CompatibilityChart
             lan={framework.project_compatibility.landing_page * 2}
             blog={framework.project_compatibility.blog * 2}
@@ -91,7 +91,7 @@ const Details = () => {
         </div>
 
         {/* 3 */}
-        <div className="flex flex-col grid-details gap-2 justify-center items-center w-full h-fit text-base md:text-xl">
+        <div className="flex flex-col grid-details gap-2 justify-center items-center w-full h-fit text-base md:text-xl text-white">
           <div>• Performance: {framework.performance * 2}/10</div>
           <div>• Scalability: {framework.scalability * 2}/10</div>
           <div>• Maintainability: {framework.ease_of_maintenance * 2}/10</div>
@@ -99,23 +99,23 @@ const Details = () => {
 
         {/* 4 */}
         <div className="flex flex-col items-center justify-center grid-details">
-          <div className="mb-3 text-sm md:text-base">Integrations</div>
+          <div className="mb-3 text-sm md:text-base text-white">Integrations</div>
 
           <div className="flex flex-col w-full gap-1">
             <div className="flex flex-row items-center justify-center w-full gap-2">
-              <div className="w-full text-sm md:text-base">Rest API</div>
+              <div className="w-full text-sm md:text-base text-white">Rest API</div>
               <div className="w-full justify-center items-center">
                 <IntegrationsBool bool={framework.integrations.rest_api} />
               </div>
             </div>
             <div className="flex flex-row items-center justify-center w-full gap-2">
-              <div className="w-full text-sm md:text-base">Real Time</div>
+              <div className="w-full text-sm md:text-base text-white">Real Time</div>
               <div className="w-full justify-center items-center">
                 <IntegrationsBool bool={framework.integrations.real_time} />
               </div>
             </div>
             <div className="flex flex-row items-center justify-center w-full gap-2">
-              <div className="w-full text-sm md:text-base">Authentication</div>
+              <div className="w-full text-sm md:text-base text-white">Authentication</div>
               <div className="w-full justify-center items-center">
                 <IntegrationsBool
                   bool={framework.integrations.authentication}
@@ -123,7 +123,7 @@ const Details = () => {
               </div>
             </div>
             <div className="flex flex-row items-center justify-center w-full gap-2">
-              <div className="w-full text-sm md:text-base">Standalone</div>
+              <div className="w-full text-sm md:text-base text-white">Standalone</div>
               <div className="w-full justify-center items-center">
                 <IntegrationsBool bool={framework.integrations.standalone} />
               </div>
